@@ -36,6 +36,8 @@ This would be an overall schema of the **created resources**, for the default se
 - For scanning (disabled by defaul), an App (with its Service Principal) is required to be created in the ActiveDirectory, to enable
   ContainerRegistry Task to run the image scanning This requires subscription-level `Security Administrator` role.
 
+- The subscription(s) to onboard must be registered to the 'Microsoft.ManagedService' services provider namespace. More info on [how to enroll your subscription here](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#:~:text=Azure%20portal-,Register%20resource%20provider,-To%20see%20all).
+
 Note: Beware that previous roles in AD are found in two different levels; Organizational level (user AD **Assigned
 Roles**), and Subscription level (user AD **Azure role assignments**). This role assignments take some time to
 consolidate.
